@@ -41,7 +41,7 @@ async function connect() {
     const phone = justPhoneNumbers[0];
     (async () => {
       const browser = await puppeteer.launch({
-        headless: true,
+        headless: false,
       });
       const page = await browser.newPage();
 
