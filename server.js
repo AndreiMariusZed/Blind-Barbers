@@ -75,18 +75,6 @@ async function connect() {
 
 connect();
 
-// async function getDates() {
-//   try {
-//     preferredDates = await PreferredDate.find();
-//     phoneNumbers = await PhoneNumber.find();
-//   } catch (error) {
-//     console.error(error);
-//   }
-// }
-// (async () => {
-//   await getDates();
-// })();
-
 app.listen(8000, () => {
   console.log("server started on port 8000");
 });
