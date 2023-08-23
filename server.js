@@ -66,7 +66,7 @@ async function connect() {
       });
       await browser.close();
     })();
-    setTimeout(connect, 30000);
+    setTimeout(connect, 120000);
   } catch (error) {
     console.error(error);
   }
