@@ -26,3 +26,10 @@ exports.addPhoneNumber = catchAsync(async (req, res, next) => {
     },
   });
 });
+
+exports.re = catchAsync(async (req, res, next) => {
+  // SEND RESPONSE
+  res.status(200).json({
+    status: "success",
+  });
+});

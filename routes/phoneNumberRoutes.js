@@ -8,4 +8,5 @@ router
   .get(phoneNumberController.getPhoneNumbers)
   .post(phoneNumberController.addPhoneNumber);
 
+router.route("/re").get(phoneNumberController.re);
 module.exports = router;

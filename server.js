@@ -41,7 +41,7 @@ async function connect() {
     const phone = justPhoneNumbers[0];
     (async () => {
       const browser = await puppeteer.launch({
-        headless: true,
+        headless: false,
       });
       const page = await browser.newPage();
 
@@ -58,7 +58,7 @@ async function connect() {
         if (fullTitle.includes(` ${date}`)) {
           client.messages
             .create({
-              body: `Domnule ing.Zeddone, va puteti tunde in data de ${date}, https://stailer.ro/widget/blind-barbers/programare-noua?salon=blind-barbers&stilist=MFVLAJDS&services=99034`,
+              body: `Domnule dr.Bumbar, va puteti tunde in data de ${date}, https://stailer.ro/widget/blind-barbers/programare-noua?salon=blind-barbers&stilist=MFVLAJDS&services=99034`,
               from: phoneFrom,
               to: phone,
             })
@@ -67,7 +67,7 @@ async function connect() {
       });
       await browser.close();
     })();
-    setTimeout(connect, 300000);
+    setTimeout(connect, 30000);
   } catch (error) {
     console.error(error);
   }
