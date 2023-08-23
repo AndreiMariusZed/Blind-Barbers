@@ -50,7 +50,6 @@ async function connect() {
       );
 
       await page.setViewport({ width: 1080, height: 1024 });
-      await page.screenshot({ path: "example.png" });
 
       const textSelector = await page.waitForSelector(".date-unavailable");
       const fullTitle = await textSelector?.evaluate((el) => el.textContent);
